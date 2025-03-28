@@ -1,0 +1,176 @@
+/* Design System */
+
+colors {
+    --dark-grey: #151515;
+    --green: #4ee1a0;
+    --grey: #242424;
+    --light-grey: #d9d9d9;
+    --white: #ffffff;
+}
+
+@font-face {
+    font-family: 'Space Grotesk Bold';
+    src: url('./assets/fonts/static/SpaceGrotesk-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Space Grotesk Medium';
+    src: url('./assets/fonts/static/SpaceGrotesk-Medium.ttf');
+}
+
+.header-xl {
+    font-family: 'Space Grotesk Bold';
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+    color: #ffffff;
+}
+
+.heading-l {
+    font-family: 'Space Grotesk Bold';
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1.5px;
+    color: #ffffff;
+}
+
+.heading-m {
+    font-family: 'Space Grotesk Bold';
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+}
+
+/* Page settings */
+
+body {
+    margin: 40px minmax(165px, auto);
+    background-color: #151515;
+}
+
+a {
+    opacity: 1;
+}
+
+a:hover {
+    opacity: 0.5;
+    transition: opacity 0.3s linear;
+    cursor: pointer;
+}
+
+/* Mobile resolution css */
+
+@media screen and (max-width: 375px) {
+    .nav {
+        margin: 20px 10px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .nav-menu {
+        gap: auto;
+    }
+
+    .logo {
+        margin: 0;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.33px;
+    }
+
+    .image-container {
+        background-color: #272727;
+        position: absolute;
+        top: 0;
+        margin: 0 auto;
+        width: 174px;
+    }
+
+    .intro-image {
+        width: 100;
+    }
+}
+
+/** Header **/
+
+.header {
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.header-decoration-1 {
+    background-image: src("./assets/images/pattern-rings.svg");
+    position: absolute;
+    top: 124px;
+    left: -342px;
+}
+
+.header-decoration-2 {
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item {
+    list-style: none;
+    margin: 0;
+}
+
+.logo {
+    font-family: 'Space Grotesk Bold';
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -0.44px;
+    color: #ffffff;
+}
+
+.nav-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.icon {
+    margin: 0;
+    width: 24px;
+    height: 24px;
+}
+
+
+
+.body {
+    font-family: 'Space Grotesk Medium';
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+}
+
+.contact {
+    font-family: 'Space Grotesk Bold';
+    font-size: 16px;
+    line-height: 26px;
+    border: none;
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: underline;
+    text-decoration-color: #4ee1a0;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+}
+
+.contact:hover {
+    color: #4ee1a0;
+    transition: linear 1s ease-in;
+}
+
+.skills-line {
+    margin: 0;
+}
