@@ -41,6 +41,12 @@ colors {
     color: #ffffff;
 }
 
+.body-l {
+    font-family: 'Space Grotesk Medium';
+    font-size: 18px;
+    line-height: 28px;
+}
+
 /* Page settings */
 
 body {
@@ -60,18 +66,19 @@ a:hover {
 
 /* Mobile resolution css */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .nav {
         margin: 20px 10px;
         padding: 0;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 20px;
     }
 
     .nav-menu {
-        gap: auto;
+        max-width: 174px;
     }
 
     .logo {
@@ -83,14 +90,30 @@ a:hover {
 
     .image-container {
         background-color: #272727;
-        position: absolute;
-        top: 0;
         margin: 0 auto;
         width: 174px;
+        position: center;
+        top: 0;
+        height: auto;
     }
 
     .intro-image {
-        width: 100;
+        width: 100%;
+    }
+
+    .header-xl {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -1.14px;
+        text-align: center;
+    }
+
+    .underline {
+        background-color: transparent;
+        color: #ffffff;
+        text-decoration: underline;
+        text-decoration-color: #4ee1a0;
+        text-underline-offset: 4px;
     }
 }
 
@@ -123,6 +146,7 @@ a:hover {
 }
 
 .logo {
+    margin: 0 auto;
     font-family: 'Space Grotesk Bold';
     font-size: 32px;
     line-height: 100%;
@@ -135,7 +159,6 @@ a:hover {
     padding: 0;
     display: flex;
     justify-content: space-between;
-    gap: 32px;
 }
 
 .icon {
@@ -143,8 +166,6 @@ a:hover {
     width: 24px;
     height: 24px;
 }
-
-
 
 .body {
     font-family: 'Space Grotesk Medium';
@@ -164,11 +185,13 @@ a:hover {
     text-decoration-color: #4ee1a0;
     text-underline-offset: 10px;
     text-decoration-thickness: 2px;
+    text-transform: uppercase;
 }
 
 .contact:hover {
     color: #4ee1a0;
     transition: linear 1s ease-in;
+    cursor: pointer;   
 }
 
 .skills-line {
